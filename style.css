@@ -1,0 +1,111 @@
+/*================navigation=======================*/
+nav {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+nav ul li {
+    display:inline;
+}
+nav ul li a {
+    text-decoration: none;
+    margin:20px;
+    font-size:30px;
+}
+/*================contactform=======================*/
+
+textarea {
+    resize: none;
+}
+
+.form-control {
+    border-radius: 0;
+    border-color: #ccc;
+    border-width: 0 0 2px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #5e9bfc;
+}
+
+.btn-start-order {
+    background: 0 0 #ffffff;
+    border: 1px solid #2f323a;
+    border-radius: 3px;
+    color: #2f323a;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: inherit;
+    margin: 30px 0;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+}
+.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+    border-color: #5e9bfc;
+    color: #5e9bfc;
+}
+
+/*================Login=======================*/
+
+#login-form {
+    width: 400px;
+    height: 320px;
+    margin: 100px auto;
+    background: rgba(110, 123, 145, 0.3);
+    border-radius: 5px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#login-icon{
+    height: 30%;
+    left: 140px;
+    top: -50px;
+    position: absolute;
+}
+
+.login-input[type="text"], [type="password"] {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    margin: 20px 0 5px 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.login-input[type="text"].email-area {
+    margin-top: 85px;
+}
+
+.login-input[type="submit"] {
+    width: 320px;
+    height: 50px;
+    margin: 20px 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #4EA95F;
+    color: #F1F3F7;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.login-input[type="submit"]:hover {
+    background: #387a44;
+    border: 1px solid #fff;
+}
+
+a {
+    margin: 0 130px;
+    text-decoration: none;
+    color: #A4A9B0;
+}
+
+a:hover {
+    color: #fff;
+}
+/*================Login=======================*/
