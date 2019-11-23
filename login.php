@@ -1,17 +1,8 @@
 <?php
-    $pageTitle='FamousQuotes';
-    $thisPage ='login';
-    include ('./includes/header.html');
-?>
 
-<div id="login-form">
-    <img id="login-icon" src="https://bit.ly/2aQB5uu" alt="login icon"> 
-    <form>
-        <input class="login-input email-area" type="text" placeholder="Username">
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
-        <input class="login-input" type="password" placeholder="Password">
-
-        <input class="login-input" type="submit" value="Login" class="btn-login">
-        <a href="#">Forgot password?</a> 
-    </form>
-</div>
