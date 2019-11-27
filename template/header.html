@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="en">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <title><?php echo $pageTitle; ?></title>
     </head>
     <body>
-        <div>TODO write content</div>
-    </body>
-</html>
+        <div class="navigation-bar">
+            <div id="navigation-container">
+                <a href="#">
+                    <img id="logo" src="./images/logo.png" alt=""/>
+                </a>
+                <ul id="navbar">
+                    <li><a  <?php if ($page=="index") echo " class=\"active\""; ?> href="index.php">Home</a></li>
+                    <li><a  <?php if ($page=="about") echo " class=\"active\""; ?> href="about.php">About us</a></li>
+                    <li><a  <?php if ($page=="contact") echo " class=\"active\""; ?> href="contact.php">Contact</a></li>
+                    <li><a  <?php if ($page=="login") echo " class=\"active\""; ?> href="login.php">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <section>
