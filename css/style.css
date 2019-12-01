@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
 /* ----------- CSS reset -------------*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -348,6 +351,17 @@ template {
 [hidden] {
     display: none;
 }
+
+/*============= end CSS reset =============*/
+
+
+
+/*=================for all elements===========*/
+body{
+    margin: auto;
+    padding: auto;
+
+}
 /* ----------- header -------------*/
 #navigation-container {
     width: 1200px;
@@ -395,50 +409,163 @@ template {
     padding: 5px 15px;
 
 }
-
-/* ----------- content ------------*/
-.content-container{
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-}
-
-.grid-items{
-    background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
 /* ----------- footer -------------*/
 footer{
-    position:fixed;
+    position:absolute;
     bottom:0px;
+    margin-top:50px;
     width: 100%;
-    background-color: #ccc;
+    color:#fff;
+    background-color: #9497B6;
 }
 
+.footer-cols ul{
+    list-style: none;
+   
+}
+.footer-cols ul li a{
+     text-decoration: none;
+     color:#fff;
+}
 .grid-container{
     display:grid;   
-    grid-template-columns: auto auto auto;
-
-    padding: 10px;
+    grid-template-columns:auto auto auto;
+    grid-column-gap:10px;
 }
 .grid-cols{
     text-align: center;
-    border-left: 1px solid black;
+    
 }
-
+.social-link{
+    width:50px;
+    height:50px;
+}
+#col2{
+    text-align: center;
+}
 .copy-rights{
     text-align: center;
 }
+/* ----------- index page ------------*/
+.content-container{
+    display: inline-grid;
+    grid-template-areas:'left middle right';
+    grid-column-gap:10px;
+    width: 100%;
+    margin:auto 
+}
 
-/*=========login form=======================================*/
+.grid-items{
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+#left-side{}
+#right-side{}
+
+
+
+.quote-area {
+    margin-right: 3%;
+    margin-left: 3%;
+    font-family: 'Open Sans','sans-serif';
+}
+#author-text {
+    text-align: right;
+    font-size: 14px;
+    font-family: Monaco, monospace;
+    text-align:center;
+}
+
+#quote-text {
+    /*box-shadow: 6px 6px 5px #5D5B3D;*/
+    font-size: 16px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color:#74BBE8;
+}
+
+#btn-quote{
+    background-color: #74BBE8;
+    color: #fff;
+    width:100px;
+    font-size:18px;
+}
+/*=========login page=======================================*/
 .login-container{
-    width:40%;
-    background-color: #ffcccc;
+    width:30%;
+    background-color: #fff;
     color:black;   
     text-align: center;
     padding:20px 20px 20px 20px;
     margin:20px auto;
+    /*box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);*/
+}
+.login-items{
+    width: 300px;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    border-bottom: 2px solid #74BBE8;
+}
+.login-btn{
+    background-color: #74BBE8;
+    height: 30px;
+    width:200px;
+    color:white;
+
 }
 
+/*===============contact==================*/
+
+#contact-form{
+    text-align: center;
+    width:50%;
+    margin:auto;
+    background-color: #fff;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    margin-top:20px;    
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.contact-input{
+    width: 420px;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    border-bottom: 2px solid #74BBE8;
+
+}
+.contact-input-message{
+    width: 420px;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid #74BBE8;
+    border-left:2px solid #74BBE8;
+}
+hr{
+    width:100px;
+}
+#contactus{
+    color: #74BBE8;
+}
+#btn-send{
+    background-color: #74BBE8;
+    height: 30px;
+    width:200px;
+    color:white;
+
+}
+/*==========about us =============*/
+
+.avatar{
+    width:100px;
+    height: 100px;
+}
+
+#left-side-aboutus{
+    background-color: #cccccc;
+    width: 200px;
+}
+#main-content-aboutus{
+    width: 50%;
+}

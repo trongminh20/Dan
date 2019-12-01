@@ -5,13 +5,14 @@
 ?>
 <div class="login-container">
     <form class="login-form" id="" action="" method="">
-        <label class="">User name:</label>
-        <input class="login-items" type="text" name="userName" placeholder="Username or Email">
+      
+        <input class="login-items" type="text" name="userName" required="required" placeholder="Username or Email">
         <br/>
-        <label>Password:</label>
-        <input class="login-items" type="password" name="passwd" placeholder="Password">
+       <br/>
+        <input class="login-items" type="password" name="passwd" required="required" placeholder="Password">
         <br/>
-        <input class="login-items" id="btn-login" type="submit" name="submit" value="Submit">
+        <br/>
+        <input class="login-btn" id="btn-login" type="submit" name="submit" value="Login">
     </form>
 </div>
 <?php
