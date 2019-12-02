@@ -20,9 +20,7 @@ include("./template/header.html");
     <div id="main-content-aboutus" class="grid-items middle">
         <div class="dl" >
             <p>
-                this is the first introduction this is the first introduction
-                this is the first introduction this is the first introduction
-                this is the first introduction this is the first introduction
+              Hello my name is Dylan Lockinger and I am in the computer information systems diploma program 
             
             </p></div>
         <hr/>
