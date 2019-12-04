@@ -9,8 +9,9 @@ if (isset($_POST['submit'])) {
     $phone = $_POST['phone'];
     
     $sqlConnect = mysqli_connect('localhost', 'root', 'trongminh', 'quoteDB');
-    $query ="insert into users (username, passord, email, phone_number, role) values ("
-            . "$username, $password,$email,$phone, user);";
+    
+    $query ="insert into users (username, password, email, phone_number, role) values ("
+            . "'$username', '$password','$email','$phone', 'user');";
     
 
     if ($sqlConnect === false) {

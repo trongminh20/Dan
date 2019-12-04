@@ -1,12 +1,14 @@
 <?php
+    $pageTitle = "Famous Quotes";
+$page = "ADDQUOTE";
     include ("./template/header.html");
 ?>
 <?php
-
+session_start();
 if(isset($_POST['submit'])){
-$Quote = $_POST['quote'];
-$Author= $_POST['author'];
-$Email= $_POST['email'];
+$quote = $_POST['quote'];
+$author= $_POST['author'];
+$email= $_POST['email'];
 
 $sqlConnect = mysqli_connect('localhost', 'root', 'trongminh', 'quoteDB');
 
@@ -16,13 +18,14 @@ if(mysqli_connect_errno()){
 }
 
 $query = "INSERT INTO `quotes` (`email`, `quote`, `author`,`date`)"
-. "VALUES('$Email','$Quote','$author','GETDATE()');";
+. "VALUES('$email','$quote','$author', CURDATE());";
 
-	if (mysqli_query($mysqli, $query)) {
+	if (mysqli_query($sqlConnect, $query)) {
 		echo "New record inseter successfuly";
+                echo "<a href=\"./login.php\">back</a>";
 	}
 	else{
-		echo mysqli_error($mysqli);
+		echo mysqli_error($sqlConnect);
 	}
 	
 }else{

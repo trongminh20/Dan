@@ -74,15 +74,15 @@ if (isset($_POST['submit'])) {
         <h2>adding quote</h2>
         <form name="myForm" method="POST" action="addQuote.php">
             Email:<br>
-            <input type="text" name="Email" value="">
+            <input type="text" name="email" value="">
             <br>
             Quote:<br>
-            <input type="text" name="Qoute" value="">
+            <input type="text" name="quote" value="">
             <br>
             Author:<br>
-            <input type="text" name="Author" value="">
+            <input type="text" name="author" value="">
             <br><br>
-            <input type="submit" value="Submit" name="submit">
+            <input type="submit" value="submit" name="submit">
         </form> "
         <form action="./logout.php" method="post">
             <input type="submit" name="logout" value="logout">
