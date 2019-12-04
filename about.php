@@ -26,9 +26,7 @@ include("./template/header.html");
         <hr/>
         <div class="mp">
             <p>
-                this is the first introduction this is the first introduction
-                this is the first introduction this is the first introduction
-                this is the first introduction this is the first introduction
+              Minh Phan, I am studying CIS Diploma program at Okanagan college.  
             </p>
         </div>
     </div>
