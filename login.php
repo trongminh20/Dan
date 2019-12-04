@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
     $name = $_POST['username'];
     $userpasswd = $_POST['password'];
 
-    $query = "select username from users where password = PASSWORD('trongminh') and username ='minh';";
+    $query = "select username from users where password = PASSWORD('$userpasswd') and username ='$name';";
 
     $result = mysqli_query($sqlConnect, $query) or die(mysqli_error($sqlConnect));
 
@@ -83,11 +83,11 @@ if (isset($_POST['submit'])) {
             <input type="text" name="author" value="">
             <br><br>
             <input type="submit" value="submit" name="submit">
-        </form> "
+        </form> 
         <form action="./logout.php" method="post">
             <input type="submit" name="logout" value="logout">
 
-        </form
+        </form>
 
         <?php
     } else {
