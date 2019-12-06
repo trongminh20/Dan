@@ -36,10 +36,10 @@ if (isset($_POST['submit'])) {
         setcookie("auth", session_id(), time() + 60 * 30, "/", "", 0);
         //create display string
         ?>
-        <h2>list of quotes user has added</h2>
+        <h2>A List Of Quotes User Has Added</h2>
         <?php
        // echo "$email";
-        $queryQuote = "SELECT email FROM quotes";
+        $queryQuote = "SELECT email, quote, author FROM quotes WHERE email = '".$email."'";
                        
                        //WHERE email = '".$email."'";
 
@@ -52,8 +52,8 @@ if (isset($_POST['submit'])) {
                 echo
                 "<div class=\"quote-list\">"
                 . "<tr style=\"font-size:15px;border-bottom: 1px solid black;\">"
-                . "<td>" . $quote . "</td>"
-                . "<td>--" . $auth . "--</td>"
+                . "<td>" . $quote . " </td>"
+                . "<td> --" . $auth . "</td>"
                 . "</tr> "
                 . "</div>";
             }
@@ -61,10 +61,11 @@ if (isset($_POST['submit'])) {
             //setcookie("auth", session_id(), time() + 60 * 30, "/", "", 0);
         }
         else{
-            echo "not working properly";
+            echo "User has not added any qoutes! Add a qoute";
         }
         ?>
-        <h2>adding quote</h2>
+        <h2>Adding Quotes</h2>
+        <br>
         <form name="myForm" method="POST" action="addQuote.php">
             Email:<br>
             <input type="text" name="email" value="">

@@ -8,11 +8,11 @@ include("./template/header.html");
 
     <div id="left-side-aboutus" class="grid-items left">
         <div class="dl" >
-            <img class="avatar" src="images/avatar.jpg" alt="Dylan"/>
+            <img class="avatar" src="images/Dylan.jpg" alt="Dylan"/>
             <p>Dylan Lockinger</p>
         </div>
         <div class="mp">
-            <img class="avatar" src="images/avatar.jpg" alt=""/>
+            <img class="avatar" src="images/Minh.jpg" alt=""/>
             <p>Minh Phan</p>
         </div>
     </div>

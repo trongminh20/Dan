@@ -6,7 +6,7 @@ $page = "Home";
 
 session_start();
 
-$sqlConnect = mysqli_connect('localhost', 'root', 'trongminh', 'quoteDB');
+$sqlConnect = mysqli_connect('localhost', 'root', 'letmein', 'QouteDb');
 
 if (mysqli_connect_errno()) {
     printf("Connect failed: %s\n", mysqli_connect_error());
@@ -18,6 +18,8 @@ $query = "SELECT * FROM quotes";
 $result = mysqli_query($sqlConnect, $query) or die(mysqli_error($sqlConnect));
 
 if ($result = $sqlConnect->query($query)) {
+    echo "Here are some qoutes added by users";
+    
     while ($row = $result->fetch_assoc()) {
         $quote = stripslashes($row['quote']);
         $auth = stripslashes($row['author']);

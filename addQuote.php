@@ -10,15 +10,15 @@ $quote = $_POST['quote'];
 $author= $_POST['author'];
 $email= $_POST['email'];
 
-$sqlConnect = mysqli_connect('localhost', 'root', 'trongminh', 'quoteDB');
+$sqlConnect = mysqli_connect('localhost', 'root', 'letmein', 'QouteDb');
 
 if(mysqli_connect_errno()){
 	printf("Connect failed: %s\n", mysqli_connect_error());
 	exit();
 }
 
-$query = "INSERT INTO `quotes` (`email`, `quote`, `author`,`date`)"
-. "VALUES('$email','$quote','$author', CURDATE());";
+$query = "INSERT INTO `quotes` (`email`, `quote`, `author`)"
+. "VALUES('$email','$quote','$author');";
 
 	if (mysqli_query($sqlConnect, $query)) {
 		echo "New record inseter successfuly";

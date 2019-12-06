@@ -8,9 +8,9 @@ if (isset($_POST['submit'])) {
     $email=$_POST['email'];
     $phone = $_POST['phone'];
     
-    $sqlConnect = mysqli_connect('localhost', 'root', 'trongminh', 'quoteDB');
+    $sqlConnect = mysqli_connect('localhost', 'root', 'letmein', 'QouteDb');
     
-    $query ="insert into users (username, password, email, phone_number, role) values ("
+    $query ="insert into Users (username, password, email, phone_number, role) values ("
             . "'$username', '$password','$email','$phone', 'user');";
     
 
@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
     }
 
     if (mysqli_query($sqlConnect, $query)) {
-        echo "<br/><a href='userlogin.html'>Go to login</a>";
+        echo "<br/><a href='userlogin.php'>Go to login</a>";
     } else {
         echo mysqli_error($sqlConnect);
     }
